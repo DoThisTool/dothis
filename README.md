@@ -8,9 +8,17 @@ No account. No ads. No obligation to pay or hand over personal data.
 
 ## Live site
 
-**https://calmclicktool.github.io/dothis/**
+**https://policysnapadmin.github.io/dothis/**
 
-(GitHub Pages — same org as [CalmClick](https://calmclicktool.github.io/calmclick/).)
+## Three separate projects
+
+DoThis is its **own** product. It shares values with two sister tools, but they are not the same app:
+
+| Project | What it does | Home |
+|--------|----------------|------|
+| **[PolicySnap](https://github.com/PolicySnapAdmin/PolicySnap)** | Privacy / policy clarity | [Repo](https://github.com/PolicySnapAdmin/PolicySnap) |
+| **[CalmClick](https://calmclicktool.github.io/calmclick/)** | Check links, messages, and errors in plain English | [calmclicktool.github.io/calmclick](https://calmclicktool.github.io/calmclick/) |
+| **DoThis** (this repo) | Everyday digital errands, step by step | [policysnapadmin.github.io/dothis](https://policysnapadmin.github.io/dothis/) |
 
 ## Open locally
 
@@ -63,22 +71,18 @@ Edit `data/guides.js`. Copy an existing object in `DOTHIS_GUIDES` and set `id`, 
 
 ## GitHub Pages
 
-This repo is a **static site**. Pages settings:
+Static site. Settings:
 
 1. Settings → Pages  
 2. Source: **Deploy from a branch**  
 3. Branch: `main` / folder: `/ (root)`  
-4. Site URL: `https://calmclicktool.github.io/dothis/`
+4. Site URL: `https://policysnapadmin.github.io/dothis/`
 
 All asset links are relative so project pages work at `/dothis/`.
 
 ## Privacy
 
 See [privacy.html](privacy.html). Guides and search run in the browser. Larger-text preference may use `localStorage` on the device only.
-
-## Sister project
-
-[CalmClick](https://calmclicktool.github.io/calmclick/) — check links, messages, and computer errors in plain English.
 
 ## License
 

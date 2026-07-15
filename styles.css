@@ -824,6 +824,18 @@ body.text-large {
   color: var(--ink-soft);
 }
 
+.footer-sisters {
+  margin-top: 0.65rem !important;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.95rem;
+}
+
+.footer-sisters span {
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
 /* ——— Guide page ——— */
 .guide-hero {
   padding: calc(var(--space) * 1.35) 0 0.5rem;

@@ -52,6 +52,10 @@
     if (cc && cfg.calmClickUrl) {
       cc.setAttribute("href", cfg.calmClickUrl);
     }
+    const ps = qs("#policySnapLink");
+    if (ps && cfg.policySnapUrl) {
+      ps.setAttribute("href", cfg.policySnapUrl);
+    }
     if (cfg.siteUrl) {
       let og = qs('meta[property="og:url"]');
       if (!og) {

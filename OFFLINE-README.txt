@@ -23,6 +23,8 @@ Privacy
 Nothing you type in the search box is uploaded by DoThis.
 There is no account and no payment.
 
-More help with suspicious links or error messages
--------------------------------------------------
-See CalmClick (separate free tool): check links and messages in plain English.
+Sister projects (separate free tools)
+-------------------------------------
+PolicySnap — privacy / policy clarity
+CalmClick  — check links, messages, and computer errors in plain English
+DoThis     — everyday digital errands (this folder)

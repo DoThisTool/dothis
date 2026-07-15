@@ -450,6 +450,7 @@ body.text-large {
   margin: 0.65rem 0 0;
   padding: 0;
   list-style: none;
+  max-height: none;
 }
 
 .cat-btn {
@@ -540,11 +541,15 @@ body.text-large {
   opacity: 0.85;
 }
 
-.guide-card[data-category="computer"] { --card-accent: #2a6a9e; }
-.guide-card[data-category="phone"] { --card-accent: #5b4d9a; }
-.guide-card[data-category="web"] { --card-accent: #1a8a6e; }
-.guide-card[data-category="email"] { --card-accent: #c4781a; }
+.guide-card[data-category="finance"] { --card-accent: #2f7d4a; }
 .guide-card[data-category="home"] { --card-accent: #b54d5a; }
+.guide-card[data-category="food"] { --card-accent: #c4781a; }
+.guide-card[data-category="health"] { --card-accent: #c45a6a; }
+.guide-card[data-category="education"] { --card-accent: #5b4d9a; }
+.guide-card[data-category="work"] { --card-accent: #3d5a80; }
+.guide-card[data-category="entertainment"] { --card-accent: #8a3d9a; }
+.guide-card[data-category="tech"] { --card-accent: #2a6a9e; }
+.guide-card[data-category="transport"] { --card-accent: #1a8a6e; }
 
 .guide-card:hover,
 .guide-card:focus-visible {

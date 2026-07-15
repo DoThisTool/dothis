@@ -1,8 +1,8 @@
 # DoThis
 
-**Everyday tech, step by step.**
+**Everyday life, step by step.**
 
-Free, plain-English guides for people who never got a patient walkthrough — saving photos, sharing Wi‑Fi, printing, quieting notifications, and more.
+Free, plain-English guides for younger adults and anyone who never got a patient walkthrough — money, home, food, health, school, work, transport, and tech.
 
 No account. No ads. No obligation to pay or hand over personal data.
 
@@ -40,7 +40,19 @@ Creates `downloads/dothis-offline.zip` for the site download button.
 
 ## What’s included
 
-15 short guides with plain steps, device tabs when needed, **You’re done when…**, search, categories, and print-friendly layout.
+40+ short guides across:
+
+- **Finance** — budget, bills, trials, bank alerts, pay stubs  
+- **Home** — laundry, breakers, smoke detectors, moves, drains  
+- **Food** — grocery lists, leftovers, rice/pasta, date labels  
+- **Health** — appointments, refills, urgent care vs ER, meds list  
+- **Education** — submissions, files, emails, study blocks  
+- **Work** — resume, video interviews, application tracking  
+- **Entertainment** — casting, local events, playlists, game night  
+- **Technology** — photos, Wi‑Fi, screenshots, 2FA, passwords  
+- **Transport** — tire pressure, rideshare safety  
+
+Each guide has plain steps, device tabs when needed, **You’re done when…**, and print-friendly layout.
 
 ## Project layout
 

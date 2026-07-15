@@ -1,6 +1,6 @@
 /* Site config — DoThisTool org (separate from PolicySnap / CalmClick) */
 window.DOTHIS_CONFIG = {
-  version: "1.0.2",
+  version: "1.1.0",
   siteUrl: "https://dothistool.github.io/dothis/",
   githubUrl: "https://github.com/DoThisTool/dothis",
   localZipUrl: "downloads/dothis-offline.zip",

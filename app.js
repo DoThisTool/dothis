@@ -5,11 +5,15 @@
 
   const CATEGORY_ICONS = {
     all: "📚",
-    computer: "💻",
-    phone: "📱",
-    web: "🌐",
-    email: "✉️",
-    home: "🏠"
+    finance: "💰",
+    home: "🏠",
+    food: "🍳",
+    health: "❤️",
+    education: "📖",
+    work: "💼",
+    entertainment: "🎬",
+    tech: "💻",
+    transport: "🚗"
   };
 
   function qs(sel, root) {

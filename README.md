@@ -8,17 +8,19 @@ No account. No ads. No obligation to pay or hand over personal data.
 
 ## Live site
 
-**https://policysnapadmin.github.io/dothis/**
+**https://dothistool.github.io/dothis/**
+
+Repo: [DoThisTool/dothis](https://github.com/DoThisTool/dothis)
 
 ## Three separate projects
 
-DoThis is its **own** product. It shares values with two sister tools, but they are not the same app:
+DoThis lives under its **own** GitHub organization (`DoThisTool`), separate from PolicySnap and CalmClick:
 
-| Project | What it does | Home |
-|--------|----------------|------|
-| **[PolicySnap](https://github.com/PolicySnapAdmin/PolicySnap)** | Privacy / policy clarity | [Repo](https://github.com/PolicySnapAdmin/PolicySnap) |
-| **[CalmClick](https://calmclicktool.github.io/calmclick/)** | Check links, messages, and errors in plain English | [calmclicktool.github.io/calmclick](https://calmclicktool.github.io/calmclick/) |
-| **DoThis** (this repo) | Everyday digital errands, step by step | [policysnapadmin.github.io/dothis](https://policysnapadmin.github.io/dothis/) |
+| Project | Organization / home | What it does |
+|--------|----------------------|--------------|
+| **[PolicySnap](https://github.com/PolicySnapAdmin/PolicySnap)** | PolicySnapAdmin | Privacy / policy clarity |
+| **[CalmClick](https://calmclicktool.github.io/calmclick/)** | [CalmClickTool](https://github.com/CalmClickTool) | Check links, messages, and errors in plain English |
+| **DoThis** (this repo) | [DoThisTool](https://github.com/DoThisTool) | Everyday digital errands, step by step |
 
 ## Open locally
 
@@ -38,13 +40,7 @@ Creates `downloads/dothis-offline.zip` for the site download button.
 
 ## What’s included
 
-15 short guides with:
-
-- Plain steps (device tabs when needed)
-- **You’re done when…** so success is obvious
-- **Good to know** tips without jargon
-- Search + categories
-- Print-friendly layout
+15 short guides with plain steps, device tabs when needed, **You’re done when…**, search, categories, and print-friendly layout.
 
 ## Project layout
 
@@ -57,9 +53,9 @@ dothis/
   app.js
   config.js
   data/guides.js
-  downloads/          # generated offline zip
+  downloads/
   scripts/pack.ps1
-  .nojekyll           # GitHub Pages: serve static files as-is
+  .nojekyll
   README.md
   OFFLINE-README.txt
   robots.txt
@@ -71,18 +67,14 @@ Edit `data/guides.js`. Copy an existing object in `DOTHIS_GUIDES` and set `id`, 
 
 ## GitHub Pages
 
-Static site. Settings:
-
 1. Settings → Pages  
 2. Source: **Deploy from a branch**  
 3. Branch: `main` / folder: `/ (root)`  
-4. Site URL: `https://policysnapadmin.github.io/dothis/`
-
-All asset links are relative so project pages work at `/dothis/`.
+4. Site URL: `https://dothistool.github.io/dothis/`
 
 ## Privacy
 
-See [privacy.html](privacy.html). Guides and search run in the browser. Larger-text preference may use `localStorage` on the device only.
+See [privacy.html](privacy.html). Guides and search run in the browser.
 
 ## License
 

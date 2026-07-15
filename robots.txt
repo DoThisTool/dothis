@@ -1,0 +1,3 @@
+# DoThis is a public help site — guides may be indexed.
+User-agent: *
+Allow: /

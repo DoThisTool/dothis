@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="DoThis — free, plain-English guides for everyday digital tasks. No account, no ads, no data grab. Print or use offline." />
+  <meta name="theme-color" content="#1a4f7a" />
+  <meta name="color-scheme" content="light" />
+  <title>DoThis — Everyday tech, step by step</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="DoThis — Everyday tech, step by step" />
+  <meta property="og:description" content="Free plain-English guides for saving photos, Wi‑Fi, printing, email, and more. No account. No ads." />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="DoThis — Everyday tech, step by step" />
+  <meta name="twitter:description" content="Free plain-English guides for everyday digital tasks. No account, no ads." />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a4f7a'/%3E%3Cpath d='M16 22h24M16 32h32M16 42h20' stroke='%23fff3df' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='48' cy='42' r='8' fill='%23c4781a'/%3E%3Cpath d='M45 42l2.2 2.2 4.3-4.8' stroke='%23fff' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap-wide header-inner">
+      <a class="brand" href="index.html" aria-label="DoThis home">
+        <span class="brand-mark" aria-hidden="true">Do</span>
+        <span class="brand-text">DoThis</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#guides" class="nav-keep">Guides</a>
+        <a href="#how">How it works</a>
+        <a href="#about">About</a>
+        <a href="#get">Offline</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+      <button type="button" class="text-size-btn" id="textSizeBtn" aria-pressed="false" title="Make text larger">
+        A<span class="text-size-plus">A</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap-wide hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Free · Private · No account</p>
+          <h1>Everyday tech tasks,<br /><span class="accent-line">explained like a patient friend.</span></h1>
+          <p class="lede">
+            Short guides for people who never got a clear walkthrough — saving a photo,
+            sharing Wi‑Fi, printing a page, quieting pop‑ups, and more.
+            No paywall. No newsletter trap. Nothing here is sold or tracked for ads.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#guides">Browse guides</a>
+            <a class="btn btn-ghost" href="#get">Use offline</a>
+          </div>
+          <ul class="trust-row" aria-label="Promises">
+            <li>100% free forever</li>
+            <li>Works offline from a folder</li>
+            <li>Large text · print‑friendly</li>
+          </ul>
+        </div>
+
+        <aside class="hero-card" aria-label="Example of a guide">
+          <p class="hero-card-label">What a guide feels like</p>
+          <div class="hero-sample">
+            <div class="hero-sample-step">
+              <span class="hero-sample-num" aria-hidden="true">1</span>
+              <p>Open the thing you’re stuck on</p>
+            </div>
+            <div class="hero-sample-step">
+              <span class="hero-sample-num" aria-hidden="true">2</span>
+              <p>Follow a few plain steps — no jargon</p>
+            </div>
+            <div class="hero-sample-step">
+              <span class="hero-sample-num" aria-hidden="true">3</span>
+              <p>Stop when you hit “You’re done when…”</p>
+            </div>
+            <div class="hero-sample-done">
+              <strong>You’re done when…</strong>
+              you can find the photo in your Gallery.
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="search-panel" aria-label="Search guides">
+      <div class="wrap">
+        <div class="search-box">
+          <label for="guideSearch">What do you want to do?</label>
+          <div class="search-field">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" />
+              <path d="M16.5 16.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <input
+              type="search"
+              id="guideSearch"
+              name="q"
+              placeholder="Try “photo”, “wifi”, “print”, “email”…"
+              autocomplete="off"
+              enterkeyhint="search"
+            />
+          </div>
+          <p class="search-hint">Or pick a category. Each guide takes a few minutes.</p>
+          <ul class="cat-row" id="categoryRow" aria-label="Categories"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="guides-section" id="guides" aria-labelledby="guides-title">
+      <div class="wrap-wide">
+        <div class="section-head">
+          <h2 id="guides-title">Guides</h2>
+          <p class="section-sub"><span id="guideCount">Loading…</span> · plain English</p>
+        </div>
+        <div class="guide-grid" id="guideGrid"></div>
+      </div>
+    </section>
+
+    <section class="how-strip" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <h2 id="how-title">How it works</h2>
+        <ol class="how-grid">
+          <li>
+            <strong>Find your task</strong>
+            <span>Search or browse. Titles use everyday words, not tech slang.</span>
+          </li>
+          <li>
+            <strong>Pick your device</strong>
+            <span>When steps differ (phone vs computer), choose the tab that matches.</span>
+          </li>
+          <li>
+            <strong>Follow &amp; finish</strong>
+            <span>Numbered steps, then a clear “You’re done when…” so you know you made it.</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="values" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <h2 id="about-title">Why DoThis exists</h2>
+        <p class="values-intro">
+          Technology should not require a relative on speed dial. These guides exist to make
+          ordinary digital life a little easier, simpler, and more honest.
+        </p>
+        <ul class="values-grid">
+          <li>
+            <strong>No shame</strong>
+            <span>If nobody showed you how, that isn’t your fault. Zero jargon assumed.</span>
+          </li>
+          <li>
+            <strong>No catch</strong>
+            <span>Free to use. No account. No “start free trial.” We don’t need your email.</span>
+          </li>
+          <li>
+            <strong>No data grab</strong>
+            <span>Guides run in your browser. We don’t build ad profiles from what you open.</span>
+          </li>
+          <li>
+            <strong>You’re done when…</strong>
+            <span>Every guide says what success looks like, so you can stop fretting.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="get-section" id="get" aria-labelledby="get-title">
+      <div class="wrap">
+        <div class="get-card">
+          <div>
+            <h2 id="get-title">Keep DoThis on your computer</h2>
+            <p>
+              Download a free copy, unzip it, and double‑click <code>index.html</code> anytime —
+              even without the internet. Great for family USB sticks and shared PCs.
+            </p>
+          </div>
+          <div class="get-actions">
+            <a class="btn btn-primary" id="downloadLocalBtn" href="downloads/dothis-offline.zip" download>
+              Download free local copy
+            </a>
+            <p class="get-note">Zip file · no installer · no account</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><span class="footer-brand">DoThis</span> — everyday digital errands, step by step.</p>
+      <p>
+        <a href="privacy.html">Privacy</a>
+        · <a id="githubLink" href="https://github.com/CalmClickTool/dothis" rel="noopener">Source on GitHub</a>
+        · Same spirit as <a id="calmClickLink" href="https://calmclicktool.github.io/calmclick/" rel="noopener">CalmClick</a>
+      </p>
+      <p>Save this folder and open <code>index.html</code> anytime — even offline.</p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="data/guides.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
